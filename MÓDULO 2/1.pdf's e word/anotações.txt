@@ -1,0 +1,88 @@
+#c5ebd6
+#83e1ad
+#3ddc84
+#2fa866
+#1a5c37
+#063dle
+Paleta de cores utilizada no projeto
+
+
+:root ( é uma pseudo-classe, tudo que for colocado nela vai servir para o documento inteiro) Nela você coloca variáveis como em linguagens de programação, nesse caso, todas as variáveis tem que começar com dois traços -> "--".
+
+
+
+Parâmetro global, no começo o site ficará bem grudado uma informação na outra, depois vai ajustando aos poucos
+* {
+    margin: 0px;
+    padding: 0px;   
+}
+
+
+
+src: url(.fontes/idroid.otf) format('opentype');
+         1 ponto significa pasta atual
+       ..2 pontos significa para voltar uma pasta e aí buscar a pasta da fonte 
+
+
+
+
+Ideal de largura da página (e o texto), 1000 a 1200px, acima disso é melhor criar um bloco adaptável, mas que não seja muito largo. 
+
+
+
+Tags importantes para responsividade do site: (com texto e imagens)
+
+main {   
+  min-width: 300px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;     /* margem no começo do parágrafo*/
+    font-size: 1em;
+    line-height: 1.5em;    /* espaçamento entre linhas */
+}
+
+main img {
+  width: 100%;
+}
+
+main img.pequena {
+  width: 50%;
+  display:block;    --> como a imagem não é um bloco precisa colocar isso
+  margin:auto;      --> centraliza a imagem, além do ajuste
+}
+
+
+
+
+
+Primeiro passo ao colocar um vídeo do Youtube é envelopar ele em uma 'div', de preferência com ou id ou CLASS. 
+
+div.video {
+    background-color: var(--cor5);   -> caixa colorida ao fundo do vídeo
+    margin: 0px -20px 30px -20px; -> margens para que o vídeo se enquadre na caixa colorida
+    padding: 20px; -> margens internas do fim da caixa para o começo do vídeo
+    padding-bottom: 59%; -> medida que vai ajustar as bordas pretas que ficam dentro do vídeo, ir testando na hora de acordo com o vídeo
+    position: relative; -> nesse div colocar relative
+}
+
+div.video > iframe {
+    position: absolute; -> nessa div colocar absolute
+    top: 5%; -> medida do primeiro ponto esquerdo acima do vídeo até o fim da caixa colorida
+    left: 5%; -> medida do primeira ponto esquerdo ao lado do vídeo até o fim da caixa colorida
+    width: 90%; -> medida para aparecer um pouco a caixa colorida ao fundo (pode ajustar pra mais ou menos)
+    height: 90%; -> medida para aparecer um pouco a caixa colorida ao fundo (pode ajustar pra mais ou menos)
+}
+
+
+
+
+/* list-style-type: '\2714\00A0\00A0'-> códigos do emoji e de distância, não é compatível com todo navegador, style position é para os marcadores ficarem dentro do bg color, e columns em quantas colunas dividir */ 
+
+
+
+/* margin: -10px -10px 0px -10px -> nesse caso margem negativa para vazar pra fora, ordem em cima, na direita, embaixo (0 para não ter), e na esquerda. Border radius a mesma coisa. */ 

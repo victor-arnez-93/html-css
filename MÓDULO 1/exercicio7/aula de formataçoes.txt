@@ -1,0 +1,1 @@
+aula de formatações, texto negrito, itálico, texto marcado, texto grande e pequeno, texto deletado, texto inserido, texto sobrescrito e subescrito

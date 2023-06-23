@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Gradiente em CSS</title>
+    <!-- * significa uma configuração global na CSS, exemplo altura do gradiente predefinida -->
+    <!-- to right, to left, to top, to bottom, ou também pode ser 90deg, 45 deg, 180deg, etc para indicar a direção do degrade -->
+    <!-- * height 100 melhora a proporção dele na tela e bckg attach fixed também deixa ele por inteiro mesmo que role a tela pra baixo -->
+<style>
+    *    {
+    height: 100%;
+    }    
+    body {
+    background-image: linear-gradient(to right, #13293D, #006494, #247BA0, #1B98E0, #E8F1F2);      
+    background-attachment: fixed;
+    }    
+</style>
+
+</head>
+<body>
+    <h1>Testando gradiente</h1>
+</body>
+</html>

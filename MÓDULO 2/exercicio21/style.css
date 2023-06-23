@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(to right, #53687E, #3A4454, #6B4E71);
+    margin: 0px;
+    text-align: justify;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px 0px;
+    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.729); 
+}
+
+nav{
+    background-color: rgb(63, 0, 63);
+    padding: 3px;
+    box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.493);
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+}
+
+main {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px 0px;
+    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.729);
+}
+
+article {
+    color: rgb(63, 0, 63);
+    color: black;
+    padding: 5px;
+}
+
+article > aside {
+    background-color: rgb(63, 0, 63);
+    color: yellow;
+    text-align: right;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    margin: 0px;
+}
+
+footer > p {
+    margin: 0px;
+}
+
+/* Se quisesse fazer um círculo no final da página por exemplo
+    div#bola {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 50%;
+} */

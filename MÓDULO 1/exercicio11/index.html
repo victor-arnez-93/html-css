@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" autoplay controls>       
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+        <source src="midia/happy-mistake.ogg" type="audio/ogg">
+        <source src="midia/happy-mistake.wav" type="audio/wav">
+        
+    </audio>
+
+
+</body>
+<!-- para adicionar imagens dinâmicas, usar a tag <picture>, após isso, adicionar a primeira imagem, começando sempre pela grande, com a tag "<img src>", a partir dai, acima da linha de código da imagem já adicionada, utilizar a tag "source-media-type", alterar o "min-width para max-width", e colocar o seu valor sempre com pelo menos 50 a mais do tamanho da foto, por exemplo se a foto for 700x700, colocar o "max-width em 750", e colocar da foto média para as menores (sempre uma linha acima da atual) como no exercício acima.-->
+<!--formatos de áudio aceitos MP3, WAV e OGG-->
+<!--modo mais fácil de adicionar áudio é "<audio src="midia/happy-mistake.mp3" controls autoplay></audio>", porém, para garantir que funcione em diversos navegadores, melhor fazer como no exercício acima.-->
+<!--exemplo do que colocar caso um navegador não suporte arquivo de áudio: "<p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="">Clique para baixar o arquivo de áudio.</a></p>."-->
+<!--auto carrega automático (pode deixar lento, metadata carrega algumas informações, none só quando clicar)-->
+</html>

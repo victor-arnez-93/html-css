@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    
+    <style>
+        h1 { /* box level */ 
+            background-color: grey;
+            height: 300px;
+            width: 300px;
+
+            border: 10px solid orangered;
+
+            padding: 10px;
+            /* se as 4 forem iguais, basta informar uma vez só, em vez de 4 nesse caso, se colocar duas, ele identifica o de cima e de baixo iguais, e o da direita e esquerda iguais, por exemplo se fosse "10px e 20px" */
+
+            margin: 20px auto 40px auto;
+            /* "margin:auto;" (centraliza a caixa)*/ 
+
+            outline: 5px dashed salmon;
+        }
+ 
+        a { /* inline level */
+            border: 5px solid blue;
+            
+            padding: 5px;
+        }
+    </style>
+    <!-- ctrl + shift + I para acessar o DevTools no chrome, dai ir em "elements" para ir testando como ficaria a página, mexendo por lá não altera o arquivo original.
+    Ordem do "padding" de preferência começar pelo top e ir no sentido horário (pra direita) -->
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline level.</a>Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
