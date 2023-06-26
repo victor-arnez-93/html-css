@@ -13,3 +13,9 @@ background-repeat: repeat-y; repete verticalmente
 background-repeat: repeat-x; repete horizontalmente
 
 height: 98vh;
+background-size: cover;
+background-attachment: fixed;
+
+Shorthand background
+color > image > position > repeat > [size] > attachment
+Size é correto mas ainda não está funcionando pela shorthand, portanto colocar só ele separado.
