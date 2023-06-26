@@ -23,6 +23,11 @@
     --fonte-3: 'Sriracha', cursive;
 } 
 
+html, body {
+    font-family: var(--fonte-1);
+    min-height: 100vh;
+}
+
 header {
     background-color: black;
     color: white;
@@ -32,7 +37,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-family: var(--fonte-2);
-    font-variant: small-caps; 
+    font-variant: small-caps;
+    font-size: 10vw;
 }
 
 header > p {
@@ -57,6 +63,7 @@ section {
     font-family: var(--fonte-3);
     line-height: 2em;
     padding-left: 30px;
+    font-size: 3.5vw;
 }
 
 section.normal {
@@ -71,8 +78,9 @@ section.imagem {
 
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.414);
-    width: 400px;
     color: white;
+    display: inline-block;
+    padding: 8px;
 }
 
 footer {

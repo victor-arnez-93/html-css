@@ -51,4 +51,6 @@ transform: translate(-50%, -50%); -> positivo na primeira, mexe pra direita, neg
  <div class="parallax-content">
 
  <div class="parallax" style="background-image: url('imagens/background002.jpg');">
-        <div class="parallax-content">
+ <div class="parallax-content">
+
+font-size: 10vw (10% do tamanho da tela -> viewport, nesse caso view width)
