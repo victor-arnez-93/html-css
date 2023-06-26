@@ -26,3 +26,29 @@ Size é correto mas ainda não está funcionando pela shorthand, portanto coloca
 position container -> position: relative;
 position conteudo -> position: absolute;
 transform: translate(-50%, -50%); -> positivo na primeira, mexe pra direita, negativo na primeira, mexe pra esquerda. Positivo na segunda mexe pra baixo, negativo na segunda mexe pra cima.
+
+
+
+
+.parallax {
+    position: relative;
+    min-height: 800px; 
+    background-attachment: fixed;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  .parallax-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+
+ <div class="parallax" style="background-image: url('imagens/background001.jpg');">
+ <div class="parallax-content">
+
+ <div class="parallax" style="background-image: url('imagens/background002.jpg');">
+        <div class="parallax-content">
