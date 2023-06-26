@@ -19,3 +19,10 @@ background-attachment: fixed;
 Shorthand background
 color > image > position > repeat > [size] > attachment
 Size é correto mas ainda não está funcionando pela shorthand, portanto colocar só ele separado.
+
+
+<section id="container">
+    <article id="conteudo">
+position container -> position: relative;
+position conteudo -> position: absolute;
+transform: translate(-50%, -50%); -> positivo na primeira, mexe pra direita, negativo na primeira, mexe pra esquerda. Positivo na segunda mexe pra baixo, negativo na segunda mexe pra cima.
