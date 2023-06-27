@@ -70,3 +70,17 @@ box-shadow: inset 6px 6px 13px 0px black;
 
 background-attachment: fixed;
 É o que da o efeito parallax
+
+@font-face {
+    font-family: 'Passion One';
+    src: url(../fontes/PassionOne-Regular.ttf) format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Sriracha';
+    src: url(../fontes/Sriracha-Regular.ttf) format('truetype');
+    font-weight: normal;
+}
+
+se as fontes fossem carregadas do servidor interno, porém vou carregar direto do google fonts.
