@@ -2,13 +2,13 @@
 
 @font-face {
     font-family: 'Passion One';
-    src: url(fontes/PassionOne-Regular.ttf) format('truetype');
+    src: url(../fontes/PassionOne-Regular.ttf) format('truetype');
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'Sriracha';
-    src: url(fontes/Sriracha-Regular.ttf) format('truetype');
+    src: url(../fontes/Sriracha-Regular.ttf) format('truetype');
     font-weight: normal;
 }
 
@@ -29,7 +29,11 @@ html, body {
 }
 
 header {
-    background-color: black;
+    background-image: url(../imagens/background005.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: right center;
     color: white;
     text-align: center;
 }
@@ -39,11 +43,13 @@ header > h1 {
     font-family: var(--fonte-2);
     font-variant: small-caps;
     font-size: 10vw;
+    letter-spacing: 5px;
 }
 
 header > p {
     font-family: var(--fonte-1);
     padding-bottom: 50px;
+    font-size: 2vw;
 }
 
 a {
@@ -63,24 +69,45 @@ section {
     font-family: var(--fonte-3);
     line-height: 2em;
     padding-left: 30px;
-    font-size: 3.5vw;
+    font-size: 3vw;
+    text-shadow: 1px 1px 0px black;
+}
+
+section p {
+    padding-bottom: 2em;
 }
 
 section.normal {
-    background-color: white;
+    background-image: url(../imagens/background003.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
     color: black; 
 }
 
 section.imagem {
     background-color: rgb(91, 91, 91);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.486);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right center;
 }
 
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.414);
+    text-shadow: 1px 1px 0px black;
     color: white;
     display: inline-block;
     padding: 8px;
+}
+
+section#img01 {
+    background-image: url(../imagens/background006.jpg);   
+}
+
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
 }
 
 footer {
@@ -88,6 +115,7 @@ footer {
     color: white;
     text-align: center;
     font-family: var(--fonte-1);
-    padding: 10px;    
+    padding: 10px;   
+    font-size: 1.5vw; 
 }
 

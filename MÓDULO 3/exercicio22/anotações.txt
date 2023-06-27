@@ -54,3 +54,19 @@ transform: translate(-50%, -50%); -> positivo na primeira, mexe pra direita, neg
  <div class="parallax-content">
 
 font-size: 10vw (10% do tamanho da tela -> viewport, nesse caso view width)
+
+
+letter-spacing: 5px; -> comando para dar espaçamentos entre as letras numa palavra
+
+
+três comandos para que a imagem ocupe e se ajuste em todo o espaço disponível
+width: 100%;
+height: 100%;
+background-size: cover;
+
+
+box-shadow: inset 6px 6px 13px 0px black;
+13px é o espalhamento, 0px é a ampliação.
+
+background-attachment: fixed;
+É o que da o efeito parallax
