@@ -1,11 +1,96 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;   
 }
 
-header {
-    background-color: purple;
+html, body {
+    background-image: url(../imagens/7.jpg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 97vh;
+    background-size: cover;
+    background-position: right center;
 }
 
+header {
+    background-image: linear-gradient(to bottom, #375779, #243754, #62276e);
+    width: 100%;
+    height: 100%;
+    color: black;
+    text-align: center;
+}
+
+header > h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 30px;
+    font-variant: small-caps;
+    font-size: 3vw;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.395);
+}
+
+header > p {
+    font-family: 'Josefin Sans', sans-serif;
+    padding-bottom: 30px;
+    font-size: 2vw;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.389);
+}
+
+p.principal {
+    background-color: rgba(76, 76, 76, 0.426);
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.388);
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    width: 700px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1.2vw;
+    color: white;
+}
+
+section {
+    background-color: rgba(76, 76, 76, 0.426);
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.388);
+    padding-left: 20px;
+    border-radius: 10px;
+    width: 1000px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    color: white;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.5vw;
+}
+
+li {
+    color: white;
+    font-size: 1.2vw;
+    padding: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2vw;
+}
+
+footer {
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px;   
+    font-size: 1.2vw; 
+    text-align: center;
+}
