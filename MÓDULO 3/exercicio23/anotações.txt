@@ -11,11 +11,38 @@ Nesse caso cada tr é uma linha
 
 No CSS
 border-collapse: separate;
-border-collapse: separate;
+border-collapse: collapse;
 Separa ou junta as células da tabela, por padrão vem um pouco separadas.
 
 O W3C coloca como opcional o fechamento das tags td, ou seja, funciona sem fechar também. Porém visualmente acho melhor fechando.
 
 text-align: left, center, right -> alinhamento horizontal
 vertical-align: top, middle, bottom -> alinhamento vertical
+
+ANATOMIA PARA TABELAS GRANDES
+table  
+    thead -> cabeçalho
+    tr,td,th
+
+    tbody -> corpo
+    tr,td,th
+
+    tfoot -> rodapé
+    tr,td,th
+
+    th também pode ser usado como título, e td como dado
+
+    hierarquia normalmente é 
+
+    thead
+    tr
+    td
+
+    tbody
+    tr
+    td
+
+    tfoot
+    tr
+    td
 
