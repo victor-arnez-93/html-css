@@ -71,3 +71,40 @@ table
     MESCLAGEM DE CÉLULAS
     td colspan=''2'' -> expande uma célula em duas ou mais colunas
     rowspan expande uma célula em duas ou mais linhas
+
+Na tabela 004 grupo e nomes são scope=col porque seus dados estão em apenas uma coluna, já filmes é um colgroup porque seus dados se dividem em 3 colunas.
+Mesma coisa para Mulheres e Homens, mas nesse caso ocupam 3 linhas então são rowgroup.
+
+Se tivesse um tfoot com ''total=1000'' por exemplo, seria apenas um scope=row porque o total ocuparia 4 colunas, e o 1000 apenas a última coluna e linha que sobra. 
+
+Para personalizar uma coluna inteira o HTML5 tem a tag nova ''colgroup''
+
+<colgroup>
+    <col class="cnome">
+    <col class="csexo">
+    <col class="cidade">
+    <col class="cprof">
+</colgroup>
+
+Se quiser personalizar mais de uma adicionar um span=''numéro de colunas desejado''  na mesma linha do col class
+
+Também daria certo assim
+.amarelo {
+    bgcolor: yellow;
+}
+.vermelho {
+    bgcolor: red;
+}
+
+<colgroup>
+    <col class="amarelo">
+    <col class="vermelho">
+    <col class="amarelo">
+    <col class="vermelho">
+</colgroup>
+
+Desse jeito ficaria intercalado uma coluna amarela, outra vermelha.
+
+Para tabelas em telas pequenas utilizar a tag overflow juntamente com uma div mais id.
+
+overflow auto são os dois eixos, overflow y é só rolagem vertical, e overflow x que é rolagem horizontal.
