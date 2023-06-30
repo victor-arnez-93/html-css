@@ -9,9 +9,18 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;     
+            background-color: black;
+            color: orangered;
+        }
+
         table {
-            width: 600px;
+            width: 850px;   
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -20,12 +29,22 @@
         }
 
         thead, tfoot {
-            background-color: black;
+            background-color: rgb(0, 0, 107);
             color: orangered;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(0, 0, 107);
+        }
+       
         td.num {
             text-align: right;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: rgb(163, 163, 163);
         }
 
         td.porcent {
@@ -35,19 +54,19 @@
         td.pais {
             text-align: right;
         }
-
+        
     </style>
 </head>
 
 <body>
-    <h1>Lista de unidades federativas do Brasil por população</h1>
     <table>
+        <caption>Lista de unidades federativas do Brasil por população</caption>
         <thead>
         <tr>
-            <th>Unidade Federativa</th>
-            <th>População</th>
-            <th>% da pop. total</th>
-            <th>País comparável</th>
+            <th scope="col">Unidade Federativa</th>
+            <th scope="col">População</th>
+            <th scope="col" style="width: 50px;">% da pop. total</th>
+            <th scope="col">País comparável</th>
         </tr>
         </thead>
         <tbody>
@@ -215,7 +234,7 @@
         </tr>
         </tbody>
         <tfoot>
-            <th>População total</th>
+            <th scope="row">População total</th>
             <td class="pais">214,3 milhões</td>
         </tfoot>
     </table>

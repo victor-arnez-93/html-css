@@ -21,13 +21,14 @@ vertical-align: top, middle, bottom -> alinhamento vertical
 
 ANATOMIA PARA TABELAS GRANDES
 table  
-    thead -> cabeçalho
+    CAPTION - título, legenda da tabela
+    THEAD -> cabeçalho
     tr,td,th
 
-    tbody -> corpo
+    TBODY -> corpo
     tr,td,th
 
-    tfoot -> rodapé
+    TFOOT -> rodapé
     tr,td,th
 
     th também pode ser usado como título, e td como dado
@@ -46,3 +47,27 @@ table
     tr
     td
 
+    TH -> usar para títulos, por exemplo Estado, População total, Crescimento da pop. total
+    TD -> usar para os dados da tabela, os números, as informações em si
+
+    Efeito zebrado
+    tbody > tr:nth-child(2n) {
+
+    }
+    Definir o valor de 'n' de acordo em de quantas em quantas linhas você quer o efeito. Ou colocar 'odd' que são as linhas ímpares e 'even' que são as pares. Odd também pode ser 2n-1 e even 2n.
+
+    Recurso de cabeçalho fixo não funciona em todos navegadores (pelo menos por enquanto), Chrome funciona, Edge também, Firefox não sei e Safari não.
+
+    table {
+        position: relative;
+    }
+
+    thead > tr > th {
+        position: sticky;
+        top: -1;
+        background-color: mesma utilizada no cabeçalho ja definido
+    }
+
+    MESCLAGEM DE CÉLULAS
+    td colspan=''2'' -> expande uma célula em duas ou mais colunas
+    rowspan expande uma célula em duas ou mais linhas
