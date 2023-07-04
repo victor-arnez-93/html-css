@@ -1,0 +1,13 @@
+
+
+<iframe src="" name="frame">
+linha correta para fazer um link abrir dentro do iframe, tem que colocar um name nele, e no <a> tem que colocar target=name colocado nele.
+Para conteúdo estático no iframe colocar srcdoc, e dentro dele o conteúdo que quiser, por exemplo
+srcdoc="<h1>Título</h1><p>Subtítulo</p><img src='imagens/cursoemvideo.png'>" 
+-->
+
+sandbox="sandbox" bloqueia todo e qualquer acesso que outros sitem que estejam dentro do iframe tentam fazer.
+referrerpolicy="no-referer é para o que está carregado dentro do iframe não coletar nenhum tipo de informação do usuário. 
+Os dois ligam o máximo de segurança dentro do iframe 
+
+"allow-same-origin allow-forms allow-scripts" assim voce permite coisas da mesma origem, scripts e formulários.
