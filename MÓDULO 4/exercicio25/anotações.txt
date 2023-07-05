@@ -1,0 +1,29 @@
+para desligar sugestão de palavra no formulário colocar <form autocomplete=''off''> ;
+
+
+a informação do formulário tem que ser enviada para outra linguagem, no caso vou utilizar a PHP mesma que ele utiliza e disse que é a mais utilizada ;
+
+
+Para a linguagem php funcionar é necessário que todo input tenha um nome. O NAME é mais útil para o html e php. Para linguagens como JavaScript o ID é mais utilizado ;
+
+
+É importante sempre utilizar o label para relacionar o objeto de formulário e a etiqueta dele.
+<p><label for="inome">Nome:</label>
+
+
+Em HTML tem dois métodos simples para envio de formulário, GET e POST, tem métodos mais seguros porém são mais avançados em linguagens de programação.
+
+
+Basicamente utilizar o método GET quando não estiver pedindo dados sensíveis, apenas nome, peso, altura por exemplo, e não senha, número de cartão de crédito, por exemplo. Quando você envia dados por GET você só pode mandar até 3 mil bytes, o que são basicamente 3 mil letras, ou seja, o dado inteiro do formulário mais nomes não podem ultrapassar 3 mil letras. Outra situaççao para não usa-lo são com dados sensíveis, ou envios de fotos. Nesse caso utilizar o POST, também para mais de 3 mil bytes, e envio de arquivos (no post os dados não aparece direto na url). O ideal para senha e dados de cartão de crédito seria HTTPS (aprender depois). POST não é uma segurança total, e GET não é uma velocidade total. 
+
+
+<input type="text" name="usu" id="iusu" required minlength="4" maxlength="15" size="10">
+required -> faz com que seja obrigatório preencher os campos para clicar em enviar.
+minlength -> tamanho mínimo do usuário, senha ou campo desejado na caixa de texto.
+maxlength -> tamanho máximo do usuário, senha ou campo desejado na caixa de texto.
+size -> tamanho da caixa de texto.
+placeholder -> "dica" do que digitar na caixa de texto específica, a partir da primeira letra digitada a dica já se apaga sozinha.
+autocomplete dentro de um input da muito mais opções, sendo mais recomendado.
+
+
+
