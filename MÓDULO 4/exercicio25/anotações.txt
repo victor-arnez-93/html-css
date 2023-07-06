@@ -26,4 +26,7 @@ placeholder -> "dica" do que digitar na caixa de texto específica, a partir da 
 autocomplete dentro de um input da muito mais opções, sendo mais recomendado.
 
 
+value dentro de um input já deixa algo pré-digitado, seja um valor ou texto, e automaticamente já tira o placeholder.
+
+
 
