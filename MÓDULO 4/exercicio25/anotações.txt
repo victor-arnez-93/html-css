@@ -28,5 +28,11 @@ autocomplete dentro de um input da muito mais opções, sendo mais recomendado.
 
 value dentro de um input já deixa algo pré-digitado, seja um valor ou texto, e automaticamente já tira o placeholder.
 
+Estudar mais sobre expressões regulares -> RegEx
+
+Checked ja deixa um checkbox marcado por padrão
+
+Para o input radio que faz parte do mesmo fieldset funcionar corretamente, exemplo em 'sexo', colocar um mesmo name, e mudar só o id.
+
 
 
