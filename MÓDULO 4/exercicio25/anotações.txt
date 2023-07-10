@@ -34,5 +34,10 @@ Checked ja deixa um checkbox marcado por padrão
 
 Para o input radio que faz parte do mesmo fieldset funcionar corretamente, exemplo em 'sexo', colocar um mesmo name, e mudar só o id.
 
+no input color se quiser mudar a cor padrão só colocar um value="#00ff00" por exemplo, que seria o verde.
+no input range mesma coisa nos valor, padrão é 0 a 100, com min e max você muda o padrão e com value você diz por qual número ele já começa selecionado.
+
+Quando você utilizar um controle do tipo de envio de arquivos, exemplo "input:file" para enviar uma foto de perfil, não pode utilizar o método get, e sim o POST. (elementos que passam de 3.000 bytes)
+
 
 
