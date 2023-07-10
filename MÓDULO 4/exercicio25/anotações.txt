@@ -40,4 +40,12 @@ no input range mesma coisa nos valor, padrão é 0 a 100, com min e max você mu
 Quando você utilizar um controle do tipo de envio de arquivos, exemplo "input:file" para enviar uma foto de perfil, não pode utilizar o método get, e sim o POST. (elementos que passam de 3.000 bytes)
 
 
+Em <select name="estado" id="iest">              
+É possível separar cada estado por suas regiões com a tag <optgroup></optgroup>
+                |
+                ▼
+    <optgroup label="Região Sudeste">
+<option value="AC"> Acre-AC</option>
+    </optgroup>
 
+Quando utilizar um <textarea> também é melhor utilizar o método POST.
