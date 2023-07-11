@@ -1,0 +1,5 @@
+media query é igual a media type + media features.
+
+media type é tipo de mídia, media feature são características de mídia. Exemplo diferentes tamanhos de telas.
+
+media types não tem parênteses, media features são indicados entre parênteses isoladamente.
