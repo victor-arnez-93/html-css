@@ -3,3 +3,20 @@ media query é igual a media type + media features.
 media type é tipo de mídia, media feature são características de mídia. Exemplo diferentes tamanhos de telas.
 
 media types não tem parênteses, media features são indicados entre parênteses isoladamente.
+
+------ Typical device breakpoints - fonte -> w3c ------
+
+Aparelhos extra pequenos (telefones) -> até 600px;
+@media only screen and (max-width: 600px) {...}
+
+Aparelhos pequenos (tablets retrato e celulares grandes) -> a partir de 600px até 768px;
+@media only screen and (min-width: 600px) {...}
+
+Aparelhos médios (tablets paisagem) -> a partir de 768px até 992px;
+@media only screen and (min-width: 768px) {...}
+
+Aparelhos grandes (laptops,desktops) -> a partir de 992px até 1200px;
+@media only screen and (min-width: 992px) {...}
+
+Aparelhos extra grandes (laptops,desktops, telas grandes no geral) -> a partir de 1200px;
+@media only screen and (min-width: 1200px) {...}
